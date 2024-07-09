@@ -14,10 +14,12 @@ function App() {
   const [extendedWedgeAnnulusClearance, setExtendedWedgeAnnulusClearance] = useState('-0.2');
   const [sortConfig, setSortConfig] = useState({ key: null, direction: 'ascending' });
 
+  const API_BASE_URL = 'http://flask-env.eba-n6brhipk.us-east-2.elasticbeanstalk.com/';
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('/api/find_combinations', {
+      const response = await axios.post(`${API_BASE_URL}/api/find_combinations`, {
         extendedDistance,
         compressedDistance,
         lockedDistance,
