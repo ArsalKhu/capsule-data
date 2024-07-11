@@ -1,23 +1,21 @@
 {
-  "name": "my-app",
+  "name": "capsule-selector",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://capsule-api.rm2bgfjrfva6i.us-west-2.cs.amazonlightsail.com",
   "dependencies": {
-    "@radix-ui/react-dialog": "^1.1.1",
-    "@radix-ui/react-tooltip": "^1.1.2",
-    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "axios": "^1.7.2",
-    "class-variance-authority": "^0.7.0",
-    "clsx": "^2.1.1",
-    "lucide-react": "^0.405.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "axios": "^1.4.0",
+    "lucide-react": "^0.263.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "tailwind-merge": "^2.4.0",
     "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@aws-amplify/backend-cli": "^1.1.0",
+    "typescript": "^4.9.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -42,13 +40,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@aws-amplify/backend": "^1.0.4",
-    "@aws-amplify/backend-cli": "^1.1.0",
-    "autoprefixer": "^10.4.19",
-    "postcss": "^8.4.39",
-    "tailwindcss": "^3.4.4",
-    "typescript": "^5.5.3"
   }
 }
