@@ -14,11 +14,12 @@ function App() {
   const [extendedWedgeAnnulusClearance, setExtendedWedgeAnnulusClearance] = useState('-0.2');
   const [sortConfig, setSortConfig] = useState({ key: null, direction: 'ascending' });
 
+  const API_URL = 'https://capsule-api.rm2bgfjrfva6i.us-west-2.cs.amazonlightsail.com/'
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`/api/find_combinations`, {
+      const response = await axios.post(`${API_URL}api/find_combinations`, {
         extendedDistance,
         compressedDistance,
         lockedDistance,

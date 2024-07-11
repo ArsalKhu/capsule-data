@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:5000",
+  "proxy": "https://capsule-api.rm2bgfjrfva6i.us-west-2.cs.amazonlightsail.com",
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.1",
     "@radix-ui/react-tooltip": "^1.1.2",
